@@ -1,7 +1,9 @@
 # 深入浅出PyTorch
-**在线阅读地址**：https://datawhalechina.github.io/thorough-pytorch/
 
-**配套视频教程**：https://www.bilibili.com/video/BV1L44y1472Z
+>[!IMPORTANT]
+>[在线阅读地址](https://datawhalechina.github.io/thorough-pytorch/) | [配套视频教程](https://www.bilibili.com/video/BV1L44y1472Z) | [智海（国家级AI科教平台）](https://aiplusx.momodel.cn/classroom/class/664bf5db24cff38ad7d2a20e?activeKey=intro)
+>
+>请注意：在线文档更新落后于主仓库更新，建议看source文件夹下的markdown文件
 
 ## 一、项目初衷
 
@@ -60,11 +62,13 @@ PyTorch是利用深度学习进行数据科学研究的重要工具，在灵活�
   - 可视化CNN卷积层
   - 使用TensorBoard可视化训练过程
   - 使用wandb可视化训练过程
+  - 使用SwanLab可视化训练过程
 - 第八章：PyTorch生态简介
   - 简介
   - 图像—torchvision
   - 视频—PyTorchVideo
   - 文本—torchtext
+  - 音频-torchaudio
 - 第九章：模型部署
   - 使用ONNX进行部署并推理
 - 第十章：常见网络代码的解读(推进中)
@@ -73,6 +77,8 @@ PyTorch是利用深度学习进行数据科学研究的重要工具，在灵活�
       - ResNet源码解读
       - Swin Transformer源码解读
       - Vision Transformer源码解读
+      - RNN源码解读
+      - LSTM源码解读及其实战
     - 目标检测
       - YOLO系列解读（与MMYOLO合作）
     - 图像分割
@@ -89,7 +95,7 @@ PyTorch是利用深度学习进行数据科学研究的重要工具，在灵活�
 |   牛志康   | DataWhale成员，西安电子科技大学本科生 | [[知乎](https://www.zhihu.com/people/obeah-82)][[个人主页](https://nofish-528.github.io/)] |
 |   李嘉骐   | DataWhale成员，清华大学研究生 | [[知乎](https://www.zhihu.com/people/li-jia-qi-16-9/posts)] |
 |    刘洋    | Datawhale成员，中国科学院数学与系统科学研究所研究生 | [[知乎](https://www.zhihu.com/people/ming-ren-19-34/asks)]   |
-|   陈安东   | DataWhale成员，中央民族大学研究生                   | [[个人主页](https://andongblue.github.io/chenandong.github.io/)] |
+|   陈安东   | DataWhale成员，哈尔滨工业大学研究生                   | [[个人主页](https://andongblue.github.io/chenandong.github.io/)] |
 
 教程贡献情况（已上线课程内容）：
 
@@ -172,7 +178,7 @@ git push -f
   │            │
   │            └─⫸ Summary in present tense. Not capitalized. No period at the end.
   │
-  └─⫸ Commit Type: lecture{#NO}|others
+  └─⫸ Commit Type: [docs #NO]:others
 ```
 
 `others`包括非课程相关的改动，如本`README.md`中的变动，`.gitignore`的调整等。
@@ -183,7 +189,6 @@ git push -f
 
 | 内容 | 更新时间 |内容|
 | :---- | :---- |:----:|
-|visdom可视化|  |`Visdom`的使用|
 |apex|  |apex的简介和使用|
 |模型部署|  |Flask部署PyTorch模型|
 |TorchScript|  |TorchScript|
